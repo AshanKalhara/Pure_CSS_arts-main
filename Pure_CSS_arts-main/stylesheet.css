@@ -2,7 +2,23 @@ body{
     background-color:rgb(3, 3, 56)
 }
 .body{
-    content:"";
     background-color:darkgrey;
-    
+    top:100px;
+    left:100px;
+    width:400px;
+    height:200px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 100px 100px 0 0 ;
 }
+.body::after{
+    content:"";
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 100px 10px 0 0;
+    margin-top:1px;
+    margin-left:1px;
+} 
