@@ -1,0 +1,29 @@
+body{
+    background-color:rgb(3, 3, 56);
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.car{
+    background-color:white;
+    position:relative;
+    top:auto;
+    height:300px;
+    width:600px;
+}
+.roof{
+    background-color:green;
+    position:absolute;
+    top:10px;
+    height:100px;
+    width:400px;
+    justify-self: center;
+    border:2px solid black;
+    border-radius: 40% 40% 80% 0% / 100% 90% 30% 0%;
+    
+
+}
+

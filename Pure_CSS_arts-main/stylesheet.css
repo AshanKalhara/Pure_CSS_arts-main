@@ -1,24 +1,27 @@
-body{
-    background-color:rgb(3, 3, 56)
+body {
+  background-color: rgb(3, 3, 56);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.body{
-    background-color:darkgrey;
-    top:100px;
-    left:100px;
-    width:400px;
-    height:200px;
-    position: relative;
-    border: 2px solid black;
-    border-radius: 100px 100px 0 0 ;
+
+.car {
+  background-color: white;
+  position: relative;
+  top: auto;
+  height: 300px;
+  width: 600px;
 }
-.body::after{
-    content:"";
-    background-color: white;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    border: 2px solid black;
-    border-radius: 100px 10px 0 0;
-    margin-top:1px;
-    margin-left:1px;
-} 
+
+.roof {
+  background-color: green;
+  position: absolute;
+  top: 10px;
+  height: 100px;
+  width: 400px;
+  justify-self: center;
+  border: 2px solid black;
+  border-radius: 40% 40% 80% 0%/100% 90% 30% 0%;
+}/*# sourceMappingURL=stylesheet.css.map */
