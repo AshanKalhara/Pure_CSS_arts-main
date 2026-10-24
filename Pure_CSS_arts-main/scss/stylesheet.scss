@@ -1,0 +1,91 @@
+@use 'variable' as *;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color;
+}
+.hat{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 120px;
+
+    &_p1{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: $text-color;
+        border-radius: 20px 20px 0 0;
+    }
+    &_p2{
+        position: absolute;
+        top: 70%;
+        height: 10px;
+        width: 100px;
+        background-color: $color2;
+    }
+
+    &_p3{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 10px;
+        width: 150px;
+        background-color: $text-color;
+        transform: translateX(-50%);
+        border-radius: 5px;
+    }
+}
+
+.face{
+    display:flex;
+    position: absolute;
+    width: 140px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+
+    &_p1{
+        position: absolute;
+        top: 78%;
+        width: 100px;
+        height: 40px;
+        background-color: $color3;
+    }
+
+    &_p2{
+        position: absolute;
+        top: 100%;
+        height: 50px;
+        width: 90px;
+        clip-path: polygon(0 0, 100% 0, 76% 100%, 21% 100%);
+        transform: translateX(-50%, 0%);
+        background-color: $color3;
+    }
+
+    &_p3{
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        height:10px;
+        width: 100px;
+        background-color: $primary-color;
+        transform: translateX(-50%);
+
+    }
+}
